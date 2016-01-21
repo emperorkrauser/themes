@@ -205,6 +205,20 @@
 		#subscription-form  .input-email {
 		width: 320px;
 	}
+
+	.features-control {
+	    bottom: 0;
+	    float: none;
+	    height: auto;
+	    width: 100%;
+	}
+	.single-feature .feature-text{
+		display: block;
+		font-size:12px;
+	}
+	.features-control #feature-expand{
+		display: none;
+	}
 }
 
 
