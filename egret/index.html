@@ -1,0 +1,505 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Egret - HTML5 landing page</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/linea-icon.css" />
+	<link rel="stylesheet" href="css/fancy-buttons.css" />
+	
+	<!--=== Google Fonts ===-->
+	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<!--=== Other CSS files ===-->
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jquery.vegas.css" />
+	<link rel="stylesheet" href="css/baraja.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+	
+	<!--=== Main Stylesheets ===-->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	
+	<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
+	<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<!--=== Internet explorer fix ===-->
+	<!-- [if lt IE 9]>
+		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif] -->
+	
+	
+</head>
+<body>
+	<!--=== Preloader section starts ===-->
+	<section id="preloader">
+		<div class="loading-circle fa-spin"></div>
+	</section>
+	<!--=== Preloader section Ends ===-->
+	
+	<!--=== Header section Starts ===-->
+	<div id="header" class="header-section">
+		<!-- sticky-bar Starts-->
+		<div class="sticky-bar-wrap">
+			<div class="sticky-section">
+				<div id="topbar-hold" class="nav-hold container">
+					<nav class="navbar" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<!--=== Site Name ===-->
+							<a class="site-name navbar-brand" href="#">Krauser Real Estate</a>
+						</div>
+						
+						<!-- Main Navigation menu Starts -->
+						<div class="collapse navbar-collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="current"><a href="#header">Home</a></li>
+								<li><a href="#gallery-area">Gallery</a></li>
+								<li><a href="#section-services">Video Tour</a></li>
+								<li><a href="#details-area">Property Specs</a></li>
+								<li><a href="#agent">Agent Info</a></li>
+								<li><a href="#location-area">Location</a></li>
+								<li><a href="#contact-area">Contact</a></li>
+							</ul>
+						</div>
+						<!-- Main Navigation menu ends-->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- sticky-bar Ends-->
+		<!--=== Header section Ends ===-->
+		
+		<!--=== Home Section Starts ===-->
+		<div id="section-home" class="home-section-wrap center">
+			<div class="section-overlay"></div>
+			<div class="container home">
+				<div class="row">
+					<h1 class="well-come">Krauser Real Estate</h1>
+					
+					<div class="col-md-8 col-md-offset-2">
+
+						<p class="intro-message">
+							<span class="sites_address_container"></span>
+							<span class="sites_property_city_container"></span>, <span class="sites_property_state_container"></span>
+							$10,000,000 <br>
+							2 BEDROOMS 2 BATHROOMS, 11 CAR PARKING 23 INTERIOR SIZE 
+						</p>
+						
+						<div class="home-buttons">
+							<a href="#" class="fancy-button button-line button-white zoom">
+								Schedule a showing
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--=== Home Section Ends ===-->
+	</div>
+	
+	
+	<!--=== Features section Starts ===-->
+	<section id="gallery-area" class="feature-wrap">
+		<div class="container features center">
+			<div class="row">
+				<div class="col-md-12">
+					<ul id="card-ul" class="features-hold baraja-container">
+						<li class="single-feature" title="Card style">
+                            <img src="images/property1.jpg" alt="...">
+							<p class="feature-text">
+								Curabitur posuere feugiat ipsum, sed elementum tortor maximus ut.
+							</p>
+							<a href="images/property1.jpg" class="fancybox" data-fancybox-group="gallery">
+								<i class="fa fa-search-plus"></i>
+							</a>
+						</li>
+						
+						<li class="single-feature" title="Card style">
+							
+                            <img src="images/property2.jpg" alt="...">
+							<p class="feature-text">
+								Curabitur posuere feugiat ipsum, sed elementum tortor maximus ut.
+							</p>
+							<a href="images/property2.jpg" class="fancybox" data-fancybox-group="gallery">
+								<i class="fa fa-search-plus"></i>
+							</a>
+						</li>
+						
+						<li class="single-feature" title="Card style">
+							
+                            <img src="images/property3.jpg" alt="...">
+							<p class="feature-text">
+								Curabitur posuere feugiat ipsum, sed elementum tortor maximus ut.
+							</p>
+							<a href="images/property3.jpg" class="fancybox" data-fancybox-group="gallery">
+								<i class="fa fa-search-plus"></i>
+							</a>
+						</li>
+
+						<li class="single-feature" title="Card style">
+							
+                            <img src="images/property4.jpg" alt="...">
+							<p class="feature-text">
+								Curabitur posuere feugiat ipsum, sed elementum tortor maximus ut.
+							</p>
+							<a href="images/property4.jpg" class="fancybox" data-fancybox-group="gallery">
+								<i class="fa fa-search-plus"></i>
+							</a>
+						</li>
+
+						<li class="single-feature" title="Card style">
+							
+                            <img src="images/property5.png" alt="...">
+							<p class="feature-text">
+								Curabitur posuere feugiat ipsum, sed elementum tortor maximus ut.
+							</p>
+							<a href="images/property5.png" class="fancybox" data-fancybox-group="gallery">
+								<i class="fa fa-search-plus"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="features-control relative">
+						<button class="control-icon fancy-button button-line no-text btn-col bell" id="feature-prev" title="Previous" >
+							<span class="icon">
+								<i class="fa fa-arrow-left"></i>
+							</span>
+						</button>
+						<button class="control-icon fancy-button button-line no-text btn-col zoom" id="feature-expand" title="Expand" >
+							<span class="icon">
+								<i class="fa fa-expand"></i>
+							</span>
+						</button>
+						<button class="control-icon fancy-button button-line no-text btn-col zoom" id="feature-close" title="Collapse" >
+							<span class="icon">
+								<i class="fa fa-compress"></i>
+							</span>
+						</button>
+						<button class="control-icon fancy-button button-line no-text btn-col bell" id="feature-next" title="Next" >
+							<span class="icon">
+								<i class="fa fa-arrow-right"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+				<!-- <div class="col-lg-12">
+					<div class="col-md-4 col-sm-4">
+                        <div class="thumbnail">
+                            <a href="images/property1.jpg" class="fancybox" data-fancybox-group="gallery">
+                                <img src="images/property1.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>Kitchen</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="thumbnail">
+                            <a href="images/property1.jpg" class="fancybox" data-fancybox-group="gallery">
+                                <img src="images/property1.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>Kitchen</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="thumbnail">
+                            <a href="images/property1.jpg" class="fancybox" data-fancybox-group="gallery">
+                                <img src="images/property1.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>Kitchen</h3>
+                            </div>
+                        </div>
+                    </div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<!--=== Features section Ends ===-->
+	
+	<!--=== Services section Starts ===-->
+	<section id="section-services" class="services-wrap">
+		<div class="container services">
+			<div class="row">
+			
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>The beast in the business.</h3>
+				</div>
+			
+				<!-- Single Service Starts -->
+				<div class="col-md-12 col-sm-12 service animated" data-animation="fadeInLeft" data-animation-delay="700">
+					<div class="service-desc">
+						<p class="service-description justify">
+							The Boston Celtics easily could have mailed it in Saturday night after losing a grueling double-overtime game to Stephen Curry and the Golden State Warriors the night before.
+						</p>
+					</div>
+				</div>
+				<!-- Single Service Ends -->
+				
+				<div class="col-md-6 col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-3">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class = "sites_property_video_container" width="560" height="315" src="https://www.youtube.com/embed/tgWSBLmvEsE" allowfullscreen></iframe>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+	<!--=== Services section Ends ===-->
+	
+	<!--=== Step-1 section Starts ===-->
+	<section id="details-area" class="section-step step-wrap details-area">
+		<div class="container step animated" data-animation="bounceInLeft" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-12 step-desc">
+					
+					<div class="col-md-12 step-details">
+						<div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Interior Details</h3>
+                            <ul>
+                                <li>Interior Size: <span class="sites_property_interior_size_container"></span></li>
+                                <li>Bedrooms: <span class="sites_property_beds_container"></span></li>
+                                <li>Bathrooms: <span class="sites_property_baths_container"></span></li>
+                                <li>Garage: <span class="sites_property_garage_container"></span> Car</li>
+                                <li>Laundry Room: <span class="sites_property_laundry_container"></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Exterior Details</h3>
+                            <ul>
+                                <li>Lot Size: <span class="sites_property_lot_size_container"></span></li>
+                                <li>Roof: <span class="sites_property_roof_container"></span></li>
+                                <li>Sewer: <span class="sites_property_sewer_container"></span></li>
+                                <li>Construction: <span class="sites_property_construction_container"></span></li>
+                                <li>Cooling: <span class="sites_property_cooling_container"></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h3 class="text-center">Room Dimensions</h3>
+                            <ul>
+                                <li>Living Room:  <span class="sites_property_living_room_dimention_container"></span></li>
+                                <li>Dining Room: <span class="sites_property_dining_room_dimention_container"></span></li>
+                                <li>Kitchen: <span class="sites_property_kitchen_dimention_container"></span></li>
+                                <li>Master Bedroom: <span class="sites_property_master_bed_dimention_container"></span></li>
+                                <li>Bedroom 2:  12×11</li>
+                            </ul>
+                        </div>
+					</div> <!-- End step-details -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-1 section Ends ===-->
+	
+	<!--=== Step-2 section Starts ===-->
+	<section id="agent" class="section-step step-even step-wrap agent-profile-area">
+		<div class="container step animated" data-animation="bounceInRight" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-12 step-desc">
+					
+					<div class="col-md-12 step-details">
+						<div class="text-center">
+                            <h2>Agent Info</h2>
+                            <img src="img/agent.png" alt="" class="img-circle">
+                            <div class="profile-details">
+                                <p><span class="sites_property_agent_fname_container">Juan</span> <span class="sites_property_agent_lname_container">Dela Cruz</span></p>
+                                <p>Phone Number: <span class="sites_property_agent_phone_container">+44 709 3643</span></p>
+                                <p>Email: <span class="sites_property_agent_email_container">jdc@example.com</span></p>
+                            </div>
+                        </div>
+					</div><!-- End step-details -->
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<section id="location-area" class="section-video-wrap location-info-area">
+		<div class="section-overlay"></div>
+		<div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="700">
+			<div class="row">
+				<div class="col-md-12 section-title">
+					<h3>Listing Location</h3>
+				</div>
+				<div id="mapPlaceholder"></div>
+			</div>
+		</div>
+	</section>
+
+	
+	<!--=== Contact section Starts ===-->
+	<section id="contact-area" class="contact-wrap contact-area">
+	<div class="section-overlay"></div>
+		<div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>Leave a message</h3>
+					</div>
+					
+					<div class="confirmation">
+						<p><span class="fa fa-check"></span></p>
+					</div>
+					
+					<form class="contact-form support-form">
+						
+						<div class="col-lg-12">
+							<input id="name" class="input-field form-item field-name" type="text" required="required" name="contact-name" placeholder="Name" />
+
+							<input id="email" class="input-field form-item field-email" type="email" required="required" name="contact-email" placeholder="Email" />
+
+							<input id="subject" class="input-field form-item field-subject" type="text" required="required" name="contact-subject" placeholder="Subject" />
+							<textarea id="message" class="textarea-field form-item field-message" rows="10" name="contact-message" placeholder="Message"></textarea>
+						</div>
+						<button type="submit" class="fancy-button button-line button-white large zoom subform">
+							Send message
+							<span class="icon">
+								<i class="fa fa-paper-plane-o"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Contact section Ends ===-->
+	
+	<!--=== Footer section Starts ===-->
+	<div id="section-footer" class="footer-wrap">
+		<div class="container footer center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h4 class="footer-title"><!-- Footer Title -->
+						<a class="site-name" href="#">2015 All Rights Reserved. Developed by Agent Squared</a>
+					</h4>
+					
+					<!-- Social Links -->
+					<div class="social-icons">
+						<ul>
+							<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+						</ul>
+					</div>
+					<ul class="list-inline">
+						<li>Terms of Use</li>
+						<li>Fair Housing Statement</li>
+						<li>Privacy Policy</li>
+					</ul>
+					<p class="copyright">All rights reserved &copy; 2015</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--=== Footer section Ends ===-->
+	
+<!--==== Js files ====-->
+<!--==== Essential files ====-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<script>
+	$(document).ready(function() {
+    	$('.fancybox').fancybox({
+            helpers     : {
+                title   : { type : 'inside' },
+                buttons : {}
+            }
+        });
+    });
+</script>
+
+<!--==== Slider and Card style plugin ====-->
+<script type="text/javascript" src="js/jquery.baraja.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!--==== MailChimp Widget plugin ====-->
+<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+<!--==== Scroll and navigation plugins ====-->
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+<!--==== Custom Script files ====-->
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+
+<script>
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showCurrentLocation);
+    }
+    else {
+        alert("Geolocation API not supported.");
+    }
+
+    function showCurrentLocation(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        // var loca = GetLocation($.cookie('sites_address'));
+
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({ 'address': $.cookie('sites_address') }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                console.log("Call Okay");
+                latitude = results[0].geometry.location.lat();
+                longitude = results[0].geometry.location.lng();
+
+                console.log("Latitude: "+latitude+", Longitude: "+longitude );
+                var coords = new google.maps.LatLng(latitude, longitude);
+
+                var mapOptions = {
+                    zoom: 15,
+                    center: coords,
+                    mapTypeControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                //create the map, and place it in the HTML map div
+                map = new google.maps.Map(
+                    document.getElementById("mapPlaceholder"), mapOptions
+                );
+
+                //place the initial marker
+                var marker = new google.maps.Marker({
+                    position: coords,
+                    map: map,
+                    title: "Current location!"
+                });
+            } 
+            else {
+                alert("Request failed.");
+                return false;
+            }
+        });
+
+        
+    }
+</script>
+</body>
+</html>
