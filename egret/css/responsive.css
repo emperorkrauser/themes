@@ -34,12 +34,27 @@
 		margin-bottom: 60px;
 	}
 	
-
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.details-area h3{
+		font-size:20px;
+	}
 
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait){
+	.details-area h3{
+		font-size:20px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
+	.navbar-nav > li > a{
+		padding:15px;	
+	}
+}
 
 /* --------- Styles for Screen width between 768px To 1023px -------- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -62,8 +77,15 @@
 		display:none;
 	}
 
+	.details-area h3{
+		font-size:20px;
+	}
 	
-	
+	.navbar-nav > li > a{
+		font-size: 14px;
+	    font-weight: 400;
+	    padding: 10px 5px;
+	}
 }
 
 
@@ -141,6 +163,16 @@
 	.single-pricing-wrap {
 		margin-bottom: 40px;
 	}
+
+	/*gallery-area*/
+	.gallery-area li i{
+		font-size:30px;
+		margin-top:10%;
+	}
+
+	.features-control .control-icon{
+		float: none;
+	}
 }
 
 
@@ -217,7 +249,17 @@
 		font-size:12px;
 	}
 	.features-control #feature-expand{
-		display: none;
+		/*display: none;*/
+	}
+
+	/*gallery-area*/
+	.gallery-area li i{
+		font-size:30px;
+		margin-top:10%;
+	}
+
+	.features-control .control-icon{
+		float: none;
 	}
 }
 
@@ -234,9 +276,20 @@
 	#subscription-form  .input-email {
 		width: 250px;
 	}
+
+	/*gallery-area*/
+	.gallery-area li i{
+		font-size:30px;
+		margin-top:10%;
+	}
+
+	.features-control .control-icon{
+		float: none;
+	}
 }
 
-
-
-
-
+@media only screen and (max-width : 640px) and (orientation:landscape){
+	.features-control #feature-expand{
+		/*display: none;*/
+	}
+}
